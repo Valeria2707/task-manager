@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { ROUTES } from "@/constants/routes";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
-      <Button>Click me</Button>
+      <p> hello</p>
+      <Link href={ROUTES.tasks}>Go to tasks table</Link>
     </div>
   );
 }
