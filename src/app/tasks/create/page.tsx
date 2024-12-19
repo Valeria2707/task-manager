@@ -1,8 +1,15 @@
+import getUserSession from "@/app/auth/api/session";
 import TaskForm from "@/components/task/TaskForm";
 import { ROUTES } from "@/constants/routes";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
-export default function Page() {
+export default async function Page() {
+  const session = await getUserSession();
+
+  if (!session) {
+    redirect(ROUTES.login);
+  }
   return (
     <div>
       <Link

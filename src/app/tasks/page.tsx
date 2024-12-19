@@ -3,11 +3,18 @@ import TaskList from "@/components/task/TaskList";
 import TaskFilter from "@/components/task/TaskFilter";
 import Link from "next/link";
 import { ROUTES } from "@/constants/routes";
+import getUserSession from "../auth/api/session";
+import { redirect } from "next/navigation";
 
 export default async function Page(props: {
   searchParams: Promise<SearchParams>;
 }) {
   const searchParams = await props.searchParams;
+  const session = await getUserSession();
+
+  if (!session) {
+    redirect(ROUTES.login);
+  }
 
   return (
     <div className="flex flex-col items-center min-h-screen space-y-10">
