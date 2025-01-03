@@ -4,8 +4,8 @@ import { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import signUp from "@/app/auth/api/sign-up";
-import login from "@/app/auth/api/login";
+import signUp from "@/app/auth/_actions/sign-up";
+import login from "@/app/auth/_actions/login";
 import Link from "next/link";
 import { ROUTES } from "@/constants/routes";
 

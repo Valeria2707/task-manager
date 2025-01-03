@@ -4,7 +4,7 @@ import { Task } from "@/types/task";
 import { getPriorityClass } from "@/utils/style";
 import { AccordionTrigger } from "../ui/accordion";
 import { Checkbox } from "../ui/checkbox";
-import updateTask from "@/app/tasks/api/update";
+import updateTask from "@/app/tasks/_actions/update";
 import { useState } from "react";
 
 type Props = {

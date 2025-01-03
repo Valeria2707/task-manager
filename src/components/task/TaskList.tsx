@@ -1,4 +1,4 @@
-import getTask from "@/app/tasks/api/get";
+import getTask from "@/app/tasks/_actions/get";
 import { SearchParams } from "@/types/params";
 import { Accordion, AccordionItem } from "../ui/accordion";
 import TaskDetails from "./TaskDetails";

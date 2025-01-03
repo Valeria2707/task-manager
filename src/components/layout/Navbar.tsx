@@ -1,6 +1,6 @@
 import Link from "next/link";
 import LogoutButton from "../auth/LogoutButton";
-import getUserSession from "@/app/auth/api/session";
+import getUserSession from "@/app/auth/_actions/session";
 import { ROUTES } from "@/constants/routes";
 
 export default async function Navbar() {

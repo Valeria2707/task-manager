@@ -1,4 +1,4 @@
-import getUserSession from "@/app/auth/api/session";
+import getUserSession from "@/app/auth/_actions/session";
 import TaskForm from "@/components/task/TaskForm";
 import { ROUTES } from "@/constants/routes";
 import Link from "next/link";

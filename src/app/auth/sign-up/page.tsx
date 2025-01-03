@@ -1,5 +1,5 @@
 import AuthForm from "@/components/auth/AuthForm";
-import getUserSession from "../api/session";
+import getUserSession from "../_actions/session";
 import { ROUTES } from "@/constants/routes";
 import { redirect } from "next/navigation";
 

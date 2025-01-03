@@ -3,7 +3,7 @@ import TaskList from "@/components/task/TaskList";
 import TaskFilter from "@/components/task/TaskFilter";
 import Link from "next/link";
 import { ROUTES } from "@/constants/routes";
-import getUserSession from "../auth/api/session";
+import getUserSession from "../auth/_actions/session";
 import { redirect } from "next/navigation";
 
 export default async function Page(props: {

@@ -2,7 +2,7 @@
 import { Task } from "@/types/task";
 import { AccordionContent } from "../ui/accordion";
 import { Button } from "../ui/button";
-import deleteTask from "@/app/tasks/api/delete";
+import deleteTask from "@/app/tasks/_actions/delete";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";
 import TaskForm from "./TaskForm";
 import { useState } from "react";

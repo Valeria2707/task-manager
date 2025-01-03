@@ -1,13 +1,13 @@
 "use client";
 
-import addTask from "@/app/tasks/api/add";
+import addTask from "@/app/tasks/_actions/add";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Checkbox } from "../ui/checkbox";
 import { Button } from "../ui/button";
 import PrioritySelect from "./PrioritySelect";
-import updateTask from "@/app/tasks/api/update";
+import updateTask from "@/app/tasks/_actions/update";
 import { Task } from "@/types/task";
 import { PRIORITY } from "@/constants/tasks";
 
