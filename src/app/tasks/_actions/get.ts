@@ -5,11 +5,9 @@ import { SearchParams } from "@/types/params";
 import { Task } from "@/types/task";
 import { formatDate, isValidDate } from "@/utils/date";
 import { createClient } from "@/utils/supabase/server";
-import { cookies } from "next/headers";
 
 export default async function getTask(searchParams: SearchParams) {
-  const cookieStore = await cookies();
-  const supabase = createClient(cookieStore);
+  const supabase = await createClient();
 
   let query = supabase
     .from("tasks")

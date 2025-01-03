@@ -2,12 +2,11 @@
 
 import { ROUTES } from "@/constants/routes";
 import { createClient } from "@/utils/supabase/server";
-import { cookies } from "next/headers";
+
 import { redirect } from "next/navigation";
 
 export default async function signUp(formData: FormData) {
-  const cookieStore = await cookies();
-  const supabase = createClient(cookieStore);
+  const supabase = await createClient();
 
   const taskData = {
     email: formData.get("email")?.toString() || "",
